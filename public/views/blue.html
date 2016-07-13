@@ -1,3 +1,5 @@
-<p class="bg-primary">
-  This is the blue section
-</p>
+<div class="bg-primary" ng-repeat="pet in data.pets">
+  <input style="color: black" type="text" ng-model="pet.name" />
+</div>
+<br />
+<input type="text" ng-model="data.fav" />

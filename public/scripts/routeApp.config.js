@@ -1,5 +1,9 @@
 angular.module('routeApp').config(function($routeProvider, $locationProvider){
   $routeProvider
+    .when('/', {
+      templateUrl: 'views/home.html',
+      controller: 'HomeController'
+    })
     .when('/red', {
       templateUrl:'views/red.html',
       controller:'RedController'
